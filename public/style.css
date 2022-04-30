@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;   
+}
+
+:root {
+    /* * colors */
+    --black: #000;
+    --white: #fff;
+    --orange: rgb(255, 100, 89);
+    --green: #50C878;
+    --violet: #8815ca;
+
+    --darkGray: #303030;
+    --lightGray: #ecf3f3;
+
+    --iconBlue: #5886ba;
+    --iconGray: #6f7985;
+
+    --logoBlue: #0077ff;
+
+    --textLightGray: var(--iconGray);
+    --textGray: var(--darkGray);
+
+    --hoverGray: rgb(243, 241, 248);
+    --hoverGreen: #44db76;
+
+    /* * borderRadius */
+    --borderRadiusFull: 50%;
+    --borderRadius15: 15px;
+
+    /* * duration */
+    --duration05: .5s;
+    
+    /* * width */
+    --elMaxWidth: 1200px;
+    --lgMaxWidth: 992px;
+    --mdMaxWidth: 768px;
+    --smMaxWidth: 576px;
+}

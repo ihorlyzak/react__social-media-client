@@ -1,0 +1,143 @@
+.topbar {
+    position: sticky;
+    top: 0; 
+    z-index: 100000;
+}
+
+.topbarContainer {
+    margin: 0 auto;
+    height: 70px;
+    max-width: var(--elMaxWidth);
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: var(--white);  
+}
+
+
+/* * logo */
+.topbarLeft {
+    width: 20%;
+    text-align: center;
+    border-right: 1.5px solid var(--lightGray);
+}
+
+.topbar__logo {
+    font-size: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--orange);
+}
+
+
+/* * account info & notifications */
+.topbarCenter {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbarIcons {
+    display: flex;
+    align-items: center;
+}
+
+.topbar__notificationIcon {
+    font-size: 26px !important;
+}
+
+.topbar__iconItem {    
+    padding: 10px;
+    border-radius: var(--borderRadius15);
+    cursor: pointer;
+    position: relative;
+    transition: var(--duration05);
+    color: var(--iconGray);
+}
+
+.topbar__iconItem:hover {   
+    color: var(--iconBlue);
+}
+
+.topbar__iconBadge {
+    width: 17px;
+    height: 17px;
+    background-color: var(--orange);
+    border-radius: var(--borderRadiusFull);
+    color: var(--white);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.topbarCenterRight {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    cursor: pointer;
+}
+
+.topbar__img {
+    display: block;
+    margin: 0 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: var(--borderRadiusFull);
+    object-fit: cover;   
+}
+
+.topbar__accountName {
+    font-size: 16px;
+}
+
+.topbar__postsCount {
+    color: var(--textLightGray);
+    font-size: 12px;
+}
+
+
+/* * searchbar */
+.topbarRight {
+    width: 20%;   
+    border-left: 1.5px solid var(--lightGray);
+}
+
+input, textarea {
+    background-color: var(--lightGray);
+    padding-right: 15px; 
+}
+
+.topbar__searchbar {
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: var(--lightGray);
+    border-radius: var(--borderRadius15);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding-right: 5px;
+}
+
+.topbar__searchbarIcon {
+    font-size: 25px !important;
+    margin-left: 10px;
+}
+
+.topbar__searchbarInput {
+    border: none;
+    max-width: 80%;
+    font-size: 16px;
+}
+
+.topbar__searchbarInput:focus {
+    outline: none;
+}
